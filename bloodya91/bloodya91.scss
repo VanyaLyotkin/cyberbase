@@ -212,6 +212,10 @@ table {
 			}
 		}
 	}
+	.details {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 @media screen and (max-width: 768px) {
 	.header {
@@ -231,6 +235,14 @@ table {
 @media screen and (max-width: 480px) {
 	.homepage__title {
 		font-size: 30px;
+	}
+	.details {
+		&__pictures {
+			&-item {
+				width: 250px;
+				height: 250px;
+			}
+		}
 	}
 }
 @media screen and (max-width: 320px) {
