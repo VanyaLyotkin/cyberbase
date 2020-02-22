@@ -83,6 +83,7 @@ table {
   background-size: cover;
   color: #fff; }
   .homepage__title {
+    color: #1efe9e;
     font-size: 44px;
     text-align: center;
     padding: 100px 30px 0 30px; }
