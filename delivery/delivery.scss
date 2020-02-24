@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Jura', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 85px;
+	width: 100%;
+	background-color: #1efe9e;
+
+	&__logo {
+		font-size: 40px;
+		color: #fff;
+	}
+
+	&__navigation {
+		display: flex;
+
+		&-link {
+			padding: 10px 20px;
+			margin: 0 5px;
+			font-size: 22px;
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 5px solid transparent;
+			transition: .8s ;
+
+			&:hover {
+				transition: .8s;
+				color: #2301b0;
+				border-bottom: 5px solid #2301b0;
+			}
+		}
+	}
+}
+
+.homepage {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	background-image: url(../images/cybersport.jpg);
+	background-size: cover;
+	color: #fff;
+
+	&__title {
+		font-size: 44px;
+		text-align: center;
+		padding: 100px 30px 0 30px;
+	}
+}
+
+.delivery {
+	max-width: 80%;
+	margin: 0 auto;
+
+	&__title {
+		padding: 20px 0 10px 0;
+		font-size: 44px;
+		font-weight: 600;
+		color: #2301b0;
+		text-align: center;
+	}
+
+	&__list {
+		margin-bottom: 20px;
+		list-style-type: circle;
+		font-size: 25px;
+		border: 1px solid #1efe9e;
+		text-align: center;
+
+		&-item {
+			color: #2301b0;
+			padding: 10px;
+		}
+	}
+}
+
+.footer {
+	background-color: #1efe9e;
+	color: #2301b0;
+	font-size: 18px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+
+	&__link {
+		color: #2301b0;
+		text-decoration: none;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.header {
+		height: 300px;
+		flex-direction: column;
+	}
+	.homepage {
+		height: 600px;
+		justify-content: center;
+
+		&__wrapper {
+			height: 250px;
+			margin-right: 0;
+
+			&-send {
+				padding: 10px 0 20px 0;
+			}
+		}
+	}
+	.details {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header {
+		height: 400px;
+
+		&__navigation {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.homepage__title {
+		font-size: 36px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.homepage__title {
+		font-size: 30px;
+	}
+	.details {
+		&__pictures {
+			&-item {
+				width: 250px;
+				height: 250px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+	.homepage__title {
+		font-size: 28px;
+	}
+}
