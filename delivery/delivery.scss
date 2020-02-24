@@ -114,6 +114,7 @@ table {
 	}
 
 	&__list {
+		background-color: rgba(185, 185, 185, 0.5);
 		margin-bottom: 20px;
 		list-style-type: circle;
 		font-size: 25px;
@@ -159,10 +160,6 @@ table {
 			}
 		}
 	}
-	.details {
-		flex-direction: column;
-		align-items: center;
-	}
 }
 @media screen and (max-width: 768px) {
 	.header {
@@ -182,14 +179,6 @@ table {
 @media screen and (max-width: 480px) {
 	.homepage__title {
 		font-size: 30px;
-	}
-	.details {
-		&__pictures {
-			&-item {
-				width: 250px;
-				height: 250px;
-			}
-		}
 	}
 }
 @media screen and (max-width: 320px) {
